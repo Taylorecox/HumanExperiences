@@ -17,7 +17,7 @@ let path = window.location.pathname;
 let page = path.split("/").pop();
 console.log(page);
 
-if (page == "index") {
+if (page == "index" || page == "") {
   // Function to resize main content of landing page unpon resizing window
   let landing = document.querySelector(".landing");
   landing.style.minHeight = window.innerHeight - 50 + "px";
