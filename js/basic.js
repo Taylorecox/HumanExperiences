@@ -15,6 +15,7 @@ function navBar() {
 
 let path = window.location.pathname;
 let page = path.split("/").pop();
+console.log(page);
 
 if (page == "index") {
   // Function to resize main content of landing page unpon resizing window
