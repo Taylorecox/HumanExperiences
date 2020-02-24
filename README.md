@@ -1,6 +1,8 @@
-# EarthquakeSearch
+# Human Experiences
 
-## Link: https://taylorecox.github.io/HumanExperiences/
+
+### Link: https://taylorecox.github.io/HumanExperiences/
+
 
 The site's overall theme is about experiencing things that the average human doesn't typically get to experience. On the landing page, the user can choose from 3 different "experiences". The three applications, (a.k.a "experiences",) I coded are: what it would be like to space travel, exploring the depths of the ocean, as well as what it would be like to be on the side of a mountain.
 
