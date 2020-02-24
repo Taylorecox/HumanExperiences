@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="layout.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <title>Cox | Project 4</title>
+</head>
+
+<!-- Body -->
+
+<body class="home">
+
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="index" class="active">Home</a>
+    <a href="pages/app1">Space</a>
+    <a href="pages/app2">Marianas Trench</a>
+    <a href="pages/app3">Mount Everest</a>
+    <a href="pages/documentation">Documentation</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBar()">&#9776;</a>
+  </div>
+
+  <!-- Landing section -->
+  <div class="landing">
+    <h1>Human Experience</h1>
+    <h2>Have you ever wanted to...</h2>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="outer-section">
+    <div class="inner-section" data-aos="fade-down">
+      <div class="text-box">
+        <div class="text">
+          <h2>Explore the vast unknown?</h2>
+        </div>
+        <button class="button" onclick="location.href='pages/app1'" data-aos="fade-up" data-aos-delay="100"><span>Visit </span></button>
+      </div>
+      <img src="images/space.png" alt="space.png">
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="outer-section">
+    <div class="inner-section" data-aos="fade-down">
+      <div class="text-box">
+        <div class="text">
+          <h2>Dive into the dark depths of the ocean?</h2>
+        </div>
+        <button class="button" onclick="location.href='pages/app2'" data-aos="fade-up" data-aos-delay="100"><span>Visit </span></button>
+      </div>
+      <img src="images/ocean.png" alt="ocean.png">
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="outer-section">
+    <div class="inner-section" data-aos="fade-down">
+      <div class="text-box">
+        <div class="text">
+          <h2>Conquer the tallest mountain on Earth?</h2>
+        </div>
+        <button class="button" onclick="location.href='pages/app3'" data-aos="fade-up" data-aos-delay="100"><span>Visit </span></button>
+      </div>
+      <img src="images/mountain.png" alt="mountain.png">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Taylor Cox's Final Project</h3>
+  </footer>
+
+  <script src="js/basic.js"></script>
+
+</body>
+
+</html>

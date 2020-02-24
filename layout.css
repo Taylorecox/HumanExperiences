@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* --- NAVBAR CSS taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp --- */
+.topnav {
+  background-color: #FC4445;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topnav a {
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  background-color: #FFFFFF;
+  color: #FC4445;
+}
+
+.topnav .active {
+  background-color: #3FEEE5;
+  color: #FFFFFF;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.icon{
+  font-size:15px;
+}
+
+/* --- END NAVBAR --- */
+
+
+
+/* Body CSS */
+
+body{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  text-align:center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+/* --- HOMEPAGE ONLY --- */
+
+.home .landing{
+  background-color: #FC4445;
+}
+
+.home {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  text-align:center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.home h1{
+  padding-top: 300px;
+  font-size: 84px;
+}
+
+.home img{
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+/* Outer Box Section CSS */
+
+.outer-section {
+  width: 100%;
+  height: 540px;
+  padding-top: 78px;
+}
+
+.outer-section:nth-of-type(4){
+  background-color: #FC4445;
+}
+
+/* Inner Box Section CSS */
+
+.inner-section{
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+  height: 80%; 
+}
+
+.inner-section h2{
+  text-transform: uppercase;
+}
+
+.outer-section:nth-of-type(3) .inner-section, .outer-section:nth-of-type(5) .inner-section{
+  background-color: #3FEEE5;
+  color: #FFFFFF;
+}
+
+.outer-section:nth-of-type(4) .inner-section{
+  background-color: #FFFFFF;
+  color: #3FEEE5;
+}
+
+.text-box{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.text{
+  margin: 0 auto;
+  max-width: 80%;
+  margin-top: 60px;
+}
+
+/* Button CSS taken from https://www.w3schools.com/css/css3_buttons.asp */
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FC4445;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  width: 35%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* --- END HOMEPAGE ONLY --- */
+
+
+
+/* --- SPACE PAGE ONLY --- */
+
+.space{
+  margin:0;
+  padding:0;
+  background-color:
+  #000000;
+  font-size:0;
+  overflow:hidden;
+  text-align: left;
+}
+
+.space h1{
+  text-align: center;
+}
+
+.space div{
+  margin:0;
+  font-size:0;
+  overflow:hidden;
+}
+
+.space canvas{
+  background-color:#000000;
+  overflow:hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* --- END SPACE PAGE ONLY --- */
+
+
+
+/* -- WATER PAGE ONLY -- */
+
+/* Clear Image Button */
+
+.water{
+  text-align: center;
+  background: url(./images/shark.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+  padding: 0px;
+  height: 100%;
+	width: 100%;
+}
+
+/* Blurry Image Screen */
+
+.water #blur {
+	background: url(./images/shark2.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+/* Clear Image Button */
+
+.water #show {
+	z-index: 999;
+	background-color: #FFFFFF;
+	opacity: 0.2;
+	height: 50px;
+	width: 50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: help;
+	
+}
+
+/* Blurry Image Button */
+
+.water #hide {
+	z-index: 999;
+	background-color: #FFFFFF;
+	opacity: 0.1;
+	height: 50px;
+	width: 50px;
+	-webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: help;
+	
+}
+
+/* Small Bubble CSS */
+
+.water .bubbleSmall {
+	background: url(./images/shark.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	cursor: help;
+    height: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    animation-name: bubbleSmall;
+    animation-duration: 1.25s;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bubbleSmall;
+    -webkit-animation-duration: 1.25s;
+    -webkit-animation-direction: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bubbleSmall;
+    -moz-animation-duration: 1.25s;
+    -moz-animation-direction: linear;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: bubbleSmall;
+    -o-animation-duration: 1.25s;
+    -o-animation-direction: linear;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    
+}
+
+/* Small Bubbles Keyframing */
+
+@keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:25px;}
+    100% {opacity: 0.2; top:20%; width:50px;}
+}
+
+@-moz-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:25px;}
+    100% {opacity: 0.2; top:20%; width:50px;}
+}
+
+@-webkit-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:25px;}
+    100% {opacity: 0.2; top:20%; width:50px;}
+}
+
+@-o-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:25px;}
+    100% {opacity: 0.2; top:20%; width:50px;}
+}
+
+/* Medium Bubbles CSS */
+
+.water .bubbleMedium {
+	background: url(./images/shark.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	cursor: help;
+    height: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    animation-name: bubbleMedium;
+    animation-duration: 1.75s;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bubbleMedium;
+    -webkit-animation-duration: 1.75s;
+    -webkit-animation-direction: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bubbleMedium;
+    -moz-animation-duration: 1.75s;
+    -moz-animation-direction: linear;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: bubbleMedium;
+    -o-animation-duration: 1.75s;
+    -o-animation-direction: linear;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    
+}
+
+/* Medium Bubbles Keyframing */
+
+@keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:50px;}
+    100% {opacity: 0.2; top:20%; width:100px;}
+}
+
+@-moz-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:50px;}
+    100% {opacity: 0.2; top:20%; width:100px;}
+}
+
+@-webkit-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:50px;}
+    100% {opacity: 0.2; top:20%; width:100px;}
+}
+
+@-o-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:50px;}
+    100% {opacity: 0.2; top:20%; width:100px;}
+}
+
+/* Large Bubbles */
+
+.water .bubbleLarge {
+	background: url(./images/shark.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+    height: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    animation-name: bubbleLarge;
+    animation-duration: 2s;
+    animation-direction: linear;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bubbleLarge;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: bubbleLarge;
+    -moz-animation-duration: 2s;
+    -moz-animation-direction: linear;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: bubbleLarge;
+    -o-animation-duration: 2s;
+    -o-animation-direction: linear;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    
+}
+
+/* Large Bubbles Keyframing */
+
+@keyframes bubbleLarge {
+    0% {opacity: 1.0; top:100%; width:100px;}
+    100% {opacity: 0.2; top:20%; width:200px;}
+}
+
+@-moz-keyframes bubbleLarge {
+    0% {opacity: 1.0; top:100%; width:100px;}
+    100% {opacity: 0.2; top:20%; width:200px;}
+}
+
+@-webkit-keyframes bubbleLarge {
+    0% {opacity: 1.0; top:100%; width:100px;}
+    100% {opacity: 0.2; top:20%; width:200px;}
+}
+
+@-o-keyframes bubbleLarge {
+    0% {opacity: 1.0; top:100%; width:100px;}
+    100% {opacity: 0.2; top:20%; width:200px;}
+}
+
+/* Individual Bubbles CSS Animations */
+
+.water .bubbleLarge:nth-child(1){
+	left:45%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+.water .bubbleLarge:nth-child(2){
+	left:75%;
+	animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-o-animation-delay: .6s;
+}
+
+.water .bubbleLarge:nth-child(3){
+	left:5%;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+
+.water .bubbleLarge:nth-child(4){
+	left:25% !important;
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	-o-animation-delay: 1.2s;
+}
+
+.water .bubbleLarge:nth-child(5){
+	left:90%;
+	animation-delay: 1.6s;
+	-webkit-animation-delay: 1.6s;
+	-moz-animation-delay: 1.6s;
+	-o-animation-delay: 1.6s;
+}
+
+.water .bubbleMedium:nth-child(6){
+	left:90%;
+	animation-delay: 1.4s;
+	-webkit-animation-delay: 1.4s;
+	-moz-animation-delay: 1.4s;
+	-o-animation-delay: 1.4s;
+}
+
+.water .bubbleMedium:nth-child(7){
+	left:35%;
+	animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-o-animation-delay: .4s;
+}
+
+.water .bubbleMedium:nth-child(8){
+	left:65%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+.water .bubbleMedium:nth-child(9){
+	left:75%;
+	animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-o-animation-delay: .4s;
+}
+
+.water .bubbleMedium:nth-child(10){
+	left:15%;
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	-o-animation-delay: .5s;
+}
+
+.water .bubbleSmall:nth-child(11){
+	left:30%;
+	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+}
+
+.water .bubbleSmall:nth-child(12){
+	left:40%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+.water .bubbleSmall:nth-child(13){
+	left:25%;
+	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+}
+
+.water .bubbleSmall:nth-child(14){
+	left:10%;
+	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+}
+
+.water .bubbleSmall:nth-child(15){
+	left:20%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+.water .bubbleSmall:nth-child(16){
+	left:60%;
+	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+}
+
+.water .bubbleSmall:nth-child(17){
+	left:70%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+.water .bubbleSmall:nth-child(18){
+	left:55%;
+	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+}
+
+.water .bubbleSmall:nth-child(19){
+	left:85%;
+	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+}
+
+.water .bubbleSmall:nth-child(20){
+	left:90%;
+	animation-delay: .3s;
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+}
+
+/* -- WATER PAGE ONLY END -- */
+
+
+
+/* --- DOCUMENTATION PAGE ONLY --- */
+
+#doc #content{
+  text-align: left;
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+  min-height: 640px;
+  padding: 35px;
+}
+
+#doc .main {
+  float:left;
+  width:75%;
+  overflow:auto;
+
+}
+
+#doc h2{
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#doc .right h2{
+  padding-left: 22px;
+}
+
+#doc .landing{
+  max-height: 1080px;
+}
+
+#doc .right {
+  float:left;
+  width:25%;
+  text-align:center;
+}
+
+footer{
+  bottom: 0;
+  position: relative;
+}
+
+/* --- END DOCUMENTATION PAGE ONLY --- */
+
+/* --- MOUNTAIN PAGE ONLY --- */
+/* Taken from  https://github.com/google/marzipano/tree/master/demos/sample-tour*/
+
+.mountain{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%
+}
+.mountain canvas{
+  width: 100%;
+  height: 100%
+}
+
+/* --- END MONTAIN PAGE ONLY --- */
+
+
+
+/* --- OTHER --- */
+
+.landing{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Link CSS */
+
+a{
+  text-decoration: none;
+  color: #061615;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #3FEEE5;
+}
+
+
+/* Header CSS */
+
+h1{
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
+  font-size: 62px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin: 0 auto;
+  background-color: #FC4445;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.home h2{
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0 auto;
+}
+
+.home h3{
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+header{
+  padding:15px;
+  text-align:center;
+}
+
+/* Content CSS */
+
+.indented{
+  text-indent: 30pt;
+}
+
+ul{
+  text-align:left;
+}
+
+/* --- FOOTER CSS --- */
+
+footer{
+  text-align:center;
+  width: 100%;
+  background-color: #3FEEE5;
+  height: 80px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+footer h3{
+  padding-top: 20px;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+
+
+/* --- MOBILE CSS --- */
+
+@media only screen and (max-width:840px) {
+  /* For mobile phones: */
+  #doc .menu, #doc .main, #doc .right {
+    width:80%;
+    padding-left: 35px;
+  }
+
+  .home h2{
+    font-size: 2em;
+  }
+}
+
+/* Navbar CSS taken off of https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
+/* When the screen is less than 840 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 840px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 840px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

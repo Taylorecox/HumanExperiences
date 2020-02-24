@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__flashcanvas_net">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../layout.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="../js/starfield.js"></script>
+  <title>Cox | Project 4</title>
+</head>
+
+<!-- Body -->
+
+<body class="space" onload="start()" onresize="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'"
+  onmouseup="context.fillStyle='rgb(0,0,0)'" data-gr-c-s-loaded="true">
+
+  <h1>Human Experience</h1>
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="../index">Home</a>
+    <a href="../pages/app1" class="active">Space</a>
+    <a href="../pages/app2">Marianas Trench</a>
+    <a href="../pages/app3">Mount Everest</a>
+    <a href="../pages/documentation">Documentation</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBar()">&#9776;</a>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <script src="../js/basic.js"></script>
+</body>
+
+</html>
