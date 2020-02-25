@@ -1,17 +1,17 @@
 # Human Experiences
 
 
-### Project Infomation
-**Platform:** Website
+## Project Infomation
+- **Platform:** Website
 
-**Team:** 1
+- **Team:** 1
 
-**Project Setting:** Educational
+- **Project Setting:** Educational
 
-**Link:** https://taylorecox.github.io/HumanExperiences/
+- **Link:** https://taylorecox.github.io/HumanExperiences/
 
 
-### Documentation
+## Documentation
 
 My approach to coding the website was to design the landing page and then the rest of the site around that general design. I spent a lot of time making sure the website was mobile-friendly - that images, text, and buttons scale correctly along with the navbar that switches to a drop-down at screen-size of 840px. I wrote a JavaScript function to properly resize the "HUMAN EXPERIENCE" section of the landing page so that it would take up the entire page whenever the user resizes the page. I also used the JavaScript ASO library to animate the landing page when the user scrolls. After coding the homepage, I went on to code each application.
 
