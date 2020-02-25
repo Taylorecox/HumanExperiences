@@ -1,8 +1,8 @@
 # Human Experiences
 
-#### Platform: Website
-#### Team: 1
-#### Project Setting: Educational
+#### **Platform:** Website
+#### **Team:** 1
+#### **Project Setting:** Educational
 
 #### Link: https://taylorecox.github.io/HumanExperiences/
 
