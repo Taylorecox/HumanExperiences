@@ -8,7 +8,7 @@
 
 - **Project Setting:** Educational
 
-- **Link:** https://taylorecox.github.io/HumanExperiences/
+- **Website Link:** https://taylorecox.github.io/HumanExperiences/
 
 
 ## Documentation
